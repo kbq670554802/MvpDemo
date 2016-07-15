@@ -8,7 +8,7 @@ import com.kbq.mvpdemo.model.LoginModel;
 
 /**
  * Created by KBQ on 16/6/7.
- * 延时模拟登录(2s)，如果用户名或者密码为空则登录失败，否则登录成功
+ * 延时模拟登录(5s)，如果用户名或者密码为空则登录失败，否则登录成功
  */
 public class LoginModelImpl implements LoginModel {
     @Override
@@ -30,6 +30,6 @@ public class LoginModelImpl implements LoginModel {
                     listener.onSuccess();
                 }
             }
-        },10000);
+        },5000);
     }
 }
